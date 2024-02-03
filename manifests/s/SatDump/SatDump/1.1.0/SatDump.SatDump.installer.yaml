@@ -1,0 +1,18 @@
+# Created with YamlCreate.ps1 v2.3.2 $debug=QUSU.CRLF.5-1-22621-2506.Win32NT
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.5.0.schema.json
+
+PackageIdentifier: SatDump.SatDump
+PackageVersion: 1.1.0
+InstallerType: zip
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: Microsoft.VCRedist.2015+.x64
+Installers:
+- Architecture: x64
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: satdump-ui.exe
+  InstallerUrl: https://github.com/SatDump/SatDump/releases/download/1.1.0/SatDump-Windows_x64_Portable.zip
+  InstallerSha256: 49604D5583E9E3C5701BB19FC2CB601D3346CDF36C62C6F1EF514BD119F9645A
+ManifestType: installer
+ManifestVersion: 1.5.0
